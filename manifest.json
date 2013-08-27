@@ -1,0 +1,18 @@
+{
+  "manifest_version": 2,
+
+  "name": "Scrollbar diet",
+  "description": "Makes scrollbars as thin or as fat as you want them to be.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*/*"],
+      "css": ["scrollbars.css"]
+    }
+  ]
+}
+
